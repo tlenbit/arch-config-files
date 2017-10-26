@@ -1,0 +1,381 @@
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;=====================================================
+
+[colors]
+
+black3 = #002b36
+black2 = #073642
+black1 = #586e75
+black0 = #657b83
+white0 = #839496
+white1 = #93a1a1
+white2 = #eee8d5
+white3 = #fdf6e3
+yellow = #b58900
+orange = #cb4b16
+red = #dc322f
+magenta = #d33682
+violet = #6c71c4
+blue = #268bd2
+cyan = #2aa198
+green = #859900
+
+
+background = #002b36
+background-alt = #002b36
+;foreground = #93a1a1
+;foreground-alt = #93a1a1
+foreground = #b0ffffff
+foreground-alt = #93a1a1
+#primary = #ffb52a
+#secondary = #e6003
+#alert = #bd2c40
+primary = #ffffff
+secondary = #ffffff
+alert = #ffffff
+
+[bar/main]
+monitor = eDP-1
+width = 100%
+height = 30
+;offset-x = 0%
+;offset-y = 0%
+bottom = true
+radius = 15.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = #00ffffff
+
+border-left-size = 460
+border-right-size = 460
+border-bottom-size = 3
+border-top-size = 0
+border-color = #00000000
+
+padding-left = 2
+padding-right = 3
+
+module-margin-left = 
+module-margin-right = 
+
+font-0 = "Consolas:pixelsize=11;3"
+font-1 = "DejaVu Sans Mono:pixelsize=6;0"
+font-2 = "FontAwesome:pixelsize=9;3"
+font-3 = "DejaVu Sans mono:pixelsize=11;4"
+
+modules-left = i3
+modules-center = volume
+modules-right = wlan temperature battery xkeyboard date
+
+;module-margin = 20
+
+;modules-left = backlight-acpi
+;modules-center = i3
+;modules-right = volume date
+
+tray-position = right
+;tray-padding = 30
+tray-transparent = true
+;tray-background = ${colors.background}
+
+tray-detached = true
+tray-offset-x = 350
+
+
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-underline = 
+
+label-layout = "  %layout%  " 
+label-layout-underline = 
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+label-indicator-underline = 
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+mount-1 = /mnt/ext
+
+label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+label-mode-padding = 3
+label-mode-foreground = #ffffff
+label-mode-background = ${colors.black3}
+
+; focused = Active workspace on focused monitor
+label-focused = %icon%
+label-focused-background = 
+label-focused-underline = ${colors.blue} 
+;${colors.black2}
+;label-focused-overline = ${colors.black2}
+label-focused-padding = 3
+label-focused-foreground = #ffffff
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %icon%
+label-unfocused-padding = 3
+label-unfocused-foreground = ${colors.foreground-alt}
+
+; visible = Active workspace on unfocused monitor
+label-visible = %icon%
+label-visible-background = ${colors.black3}
+label-visible-underline = 
+label-visible-padding = 3
+
+; urgent = Workspace with urgency hint set
+label-urgent = %icon%
+label-urgent-background = ${colors.black3}
+label-urgent-padding = 3
+
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+ws-icon-0 = "1;"
+ws-icon-1 = "2;"
+ws-icon-2 = "3;"
+ws-icon-3 = "4;"
+ws-icon-4 = "5;"
+ws-icon-5 = "6;"
+ws-icon-6 = "7;"
+ws-icon-7 = "8;"
+ws-icon-8 = "9;"
+ws-icon-9 = "10;"
+ws-icon-10 = "11;"
+ws-icon-12 = "12;"
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = "<bar>"
+
+bar-width = 16
+bar-indicator = |
+bar-indicator-foreground = #9f78e1
+bar-indicator-font = 
+bar-fill = ─
+bar-fill-font = 
+bar-fill-foreground = #9f78e1
+bar-empty = ─
+bar-empty-font = 
+bar-empty-foreground = ${colors.foreground-alt}
+
+[module/backlight-acpi]
+inherit = module/xbacklight
+type = internal/backlight
+card = intel_backlight
+
+[module/wlan]
+type = internal/network
+interface = wlp4s0
+interval = 3.0
+
+format-connected = "  <label-connected>    "
+format-connected-unerline =
+label-connected = "%essid%"
+label-connected-foreground = ${colors.foreground} 
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${colors.foreground-alt}
+
+[module/eth]
+type = internal/network
+interface = enp5s0f1
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected = %local_ip%
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/date]
+type = internal/date
+interval = 1
+
+;date = " %a %b%d "
+;date-alt = " %Y-%m-%d"
+
+time = "  %H:%M  "
+;time-alt = %H:%M:%S
+
+format-prefix = 
+format-foreground = #ffffff
+format-underground = ${colors.black2}
+format-underline = ${colors.blue}
+label-font = 
+
+label = %time%
+
+[module/date_top]
+inherit = module/date
+label-foreground = #00ffffff 
+
+[module/volume]
+type = internal/volume
+
+format-volume = "<bar-volume>"
+label-volume = 
+label-volume-foreground = ${colors.blue}
+
+master-soundcard = default
+;speaker-soundcard = hw:1
+;headphone-soundcard = hw:1
+master-mixer = Master
+;speaker-mixer = 
+;headphone-mixer = 
+;headphone-id = 9
+
+format-muted-prefix = " "
+format-muted-foreground = ${colors.foreground-alt}
+label-muted = sound muted
+;#55aa55
+bar-volume-width = 18
+bar-volume-foreground-0 = ${colors.blue}
+bar-volume-foreground-1 = ${colors.blue}
+bar-volume-foreground-2 = ${colors.blue}
+bar-volume-foreground-3 = ${colors.blue}
+bar-volume-foreground-4 = ${colors.blue}
+bar-volume-foreground-5 = ${colors.blue}
+bar-volume-foreground-6 = ${colors.blue}
+;bar-volume-foreground-5 = #f5a70a
+;bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator = ▄
+bar-volume-indicator-foreground = ${colors.blue}
+bar-volume-indicator-font = 2
+bar-volume-fill = ▄
+bar-volume-fill-font = 2
+bar-volume-fill-foreground = #30ffffff
+bar-volume-empty = ▄
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = #30ffffff
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ACAD
+full-at = 100
+
+format-charging = <animation-charging><label-charging>
+format-charging-underline = #00ffffff
+
+format-discharging = <ramp-capacity><label-discharging>
+format-discharging-underline = #00ffffff
+
+format-full-prefix = 
+format-full-prefix-foreground = #ffffff
+format-full-underline = #00ffffff
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-foreground = ${colors.foreground-alt}
+
+label-charging = "   %percentage%%  "
+
+label-discharging = "  %percentage%%  "
+
+label-full = 
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-framerate = 750
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = "  <label>  "
+format-underline = 
+format-warn = "  <label-warn>  "
+format-warn-underline = ${self.format-underline}
+
+label = %temperature%
+label-warn = %temperature%
+label-foreground = ${colors.foreground}
+label-warn-foreground = ${colors.red}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground-alt}
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini
