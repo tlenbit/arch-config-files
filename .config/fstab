@@ -1,0 +1,27 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sdb5
+UUID=0dd16234-6280-4d2d-b0c3-f55b097afafb	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# /dev/sdb2
+UUID=6896-5C8E      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro	0 2
+
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sdb5
+#UUID=b4e74777-abce-4c3d-a2ba-a69c85dfc46c	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# /dev/sdb2
+#UUID=76A7-2973      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro	0 2
+
+#PARTUUID=22d4862e-837c-42eb-b9ff-70fb1332761a   /mnt/backup_ext      ntfs            cristo, rw, nofail      0 0
+
+#PARTUUID=dde3639d-774e-4620-bc2b-a131f70c4501   /mnt/ext             ntfs            cristo, rw, nofail      0 0
+
+PARTUUID=2c651c1d-617f-4920-966d-61230cee2446   /mnt/windows_sys     ntfs            cristo, r, nofail      0 0
+
+PARTUUID=22825b83-5766-48e2-ad6d-079275e7aede   /mnt/windows         ntfs            cristo, rw, nofail      0 0
