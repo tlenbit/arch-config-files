@@ -59,9 +59,13 @@ set $green #859900
 # Transparency level for rgba from 00 to FF
 set $t b8
 
+# class                 border  backgr. text    indicator child_border
+#client.focused          $green $green $green $green #268bd2c0
+#client.focused_inactive $green $green $green $green  #268bd250
+#client.unfocused        $green $green $green $green #268bd250
+#client.urgent           $green $green $green $green  #268bd2050
+#client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
-#client.focused          #ffffff #285577 #ffffff #2e9ef4   #285577
-#client.unfocused        #ffffff #222222 #888888 #292d2e   #222222
 
 gaps inner 7
 gaps outer 1
