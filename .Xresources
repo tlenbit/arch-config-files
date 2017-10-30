@@ -55,12 +55,13 @@ rofi.lines: 12
 !rofi.font: Inconsolata:size=11
 
 URxvt*borderless: true
-URxvt*internalBorder: 5
+URxvt*internalBorder: 8
 !URxvt*externalBorder: 1
 !URxvt*borderColor: #268bd2
 URxvt*scrollBar: false
 URxvt*cursorBlink: 1
 URxvt*cursorUnderline: 1
+!URxvt*lineSpace: 30
 !URxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
 
 !URxvt.transparent: true
