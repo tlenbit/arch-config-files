@@ -43,11 +43,11 @@ alert = #ffffff
 [bar/main]
 monitor = eDP-1
 width = 100%
-height = 30
+height = 24
 ;offset-x = 0%
 ;offset-y = 0%
 bottom = true
-radius = 15.0
+radius = 0
 fixed-center = true
 
 background = ${colors.background}
@@ -56,20 +56,20 @@ foreground = ${colors.foreground}
 line-size = 2
 line-color = #00ffffff
 
-border-left-size = 460
-border-right-size = 460
-border-bottom-size = 3
-border-top-size = 0
+border-left-size = 0
+border-right-size = 0
+border-bottom-size = 0
+border-top-size = 5
 border-color = #00000000
 
 padding-left = 2
-padding-right = 3
+padding-right = 2
 
-module-margin-left = 
-module-margin-right = 
+module-margin-left = 1
+module-margin-right = 1
 
 font-0 = "Consolas:pixelsize=11;3"
-font-1 = "DejaVu Sans Mono:pixelsize=6;0"
+font-1 = "DejaVu Sans Mono:pixelsize=8;0"
 font-2 = "FontAwesome:pixelsize=9;3"
 font-3 = "DejaVu Sans mono:pixelsize=11;4"
 
@@ -85,12 +85,12 @@ modules-right = wlan temperature battery xkeyboard date
 
 tray-position = right
 ;tray-padding = 30
-tray-transparent = true
-;tray-background = ${colors.background}
+tray-transparent = false
+tray-background = ${colors.background}
 
 tray-detached = true
-tray-offset-x = 350
-
+tray-offset-x = -50
+tray-offset-y = -50
 
 
 scroll-up = i3wm-wsnext
@@ -153,10 +153,10 @@ label-mode-background = ${colors.black3}
 
 ; focused = Active workspace on focused monitor
 label-focused = %icon%
-label-focused-background = 
-label-focused-underline = ${colors.blue} 
-;${colors.black2}
-;label-focused-overline = ${colors.black2}
+label-focused-background = ${colors.black2}
+label-focused-underline = #00268bd2
+;${colors.black3}
+label-focused-overline = #00268bd2
 label-focused-padding = 3
 label-focused-foreground = #ffffff
 
@@ -264,8 +264,8 @@ time = "  %H:%M  "
 
 format-prefix = 
 format-foreground = #ffffff
-format-underground = ${colors.black2}
-format-underline = ${colors.blue}
+format-background = ${colors.black3}
+format-underline = ${colors.black3}
 label-font = 
 
 label = %time%

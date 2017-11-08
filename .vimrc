@@ -31,6 +31,9 @@ Plugin 'Vimjas/vim-python-pep8-indent'
 "Plugin 'vim-airline/vim-airline'
 "Plugin 'vim-airline/vim-airline-themes'
 
+" disable auto doc strings in jedi vim
+autocmd FileType python setlocal completeopt-=preview
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

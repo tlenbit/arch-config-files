@@ -1,7 +1,6 @@
 function cs() {
   cd "$@" && ls
   }
-alias lumos="tee /sys/class/backlight/intel_backlight/brightness <<<"
 alias ll="ls -la --block-size=MB"
 alias ls='ls --color=auto'
 alias wget='wget --inet4-only'
@@ -25,4 +24,4 @@ HISTSIZE=1000
 neofetch --ascii ~/.config/neofetch/ascii_logos/12
 
 # added by Anaconda3 4.4.0 installer
-export PATH="/home/cristo/anaconda3/bin:$PATH"
+#export PATH="/home/cristo/anaconda3/bin:$PATH"
