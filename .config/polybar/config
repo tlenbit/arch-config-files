@@ -59,17 +59,17 @@ line-color = #00ffffff
 border-left-size = 0
 border-right-size = 0
 border-bottom-size = 0
-border-top-size = 5
+border-top-size = 8
 border-color = #00000000
 
 padding-left = 2
 padding-right = 2
 
-module-margin-left = 1
-module-margin-right = 1
+module-margin-left = 0
+module-margin-right = 0
 
 font-0 = "Consolas:pixelsize=11;3"
-font-1 = "DejaVu Sans Mono:pixelsize=8;0"
+font-1 = "DejaVu Sans Mono:pixelsize=4;1"
 font-2 = "FontAwesome:pixelsize=9;3"
 font-3 = "DejaVu Sans mono:pixelsize=11;4"
 
@@ -293,7 +293,7 @@ format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 ;#55aa55
-bar-volume-width = 18
+bar-volume-width = 40
 bar-volume-foreground-0 = ${colors.blue}
 bar-volume-foreground-1 = ${colors.blue}
 bar-volume-foreground-2 = ${colors.blue}
@@ -304,13 +304,13 @@ bar-volume-foreground-6 = ${colors.blue}
 ;bar-volume-foreground-5 = #f5a70a
 ;bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
-bar-volume-indicator = ▄
+bar-volume-indicator = █
 bar-volume-indicator-foreground = ${colors.blue}
 bar-volume-indicator-font = 2
-bar-volume-fill = ▄
+bar-volume-fill = █
 bar-volume-fill-font = 2
 bar-volume-fill-foreground = #30ffffff
-bar-volume-empty = ▄
+bar-volume-empty = █
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = #30ffffff
 
