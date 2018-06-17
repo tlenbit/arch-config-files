@@ -25,3 +25,4 @@ neofetch --ascii ~/.config/neofetch/ascii_logos/12
 
 # added by Anaconda3 4.4.0 installer
 #export PATH="/home/cristo/anaconda3/bin:$PATH"
+source /usr/share/nvm/init-nvm.sh
