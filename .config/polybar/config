@@ -56,10 +56,10 @@ foreground = ${colors.foreground}
 line-size = 2
 line-color = #00ffffff
 
-border-left-size = 0
-border-right-size = 0
+border-left-size = 200
+border-right-size = 200
 border-bottom-size = 0
-border-top-size = 7
+border-top-size = 5
 border-color = #00000000
 
 padding-left = 2
@@ -85,12 +85,12 @@ modules-right = wlan temperature battery xkeyboard date
 
 tray-position = right
 ;tray-padding = 30
-tray-transparent = false
+tray-transparent = true
 tray-background = ${colors.background}
 
 tray-detached = true
-tray-offset-x = -50
-tray-offset-y = -50
+tray-offset-x = 120
+tray-offset-y = 0
 
 
 scroll-up = i3wm-wsnext

@@ -55,13 +55,13 @@ rofi.lines: 12
 !rofi.font: Inconsolata:size=11
 
 URxvt*borderless: true
-URxvt*internalBorder: 5
+URxvt*internalBorder: 4
 !URxvt*externalBorder: 1
 !URxvt*borderColor: #268bd2
 URxvt*scrollBar: false
 URxvt*cursorBlink: 1
 URxvt*cursorUnderline: 1
-!URxvt*lineSpace: 30
+!URxvt*lineSpace: 4
 !URxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
 
 !URxvt.transparent: true
@@ -73,16 +73,8 @@ URxvt.font: xft:Consolas:size=11
 !URxvt.font: xft:DejaVu Sans Mono:size=9
 !URxvt.font: xft:Inconsolata:size=11
 
-
-XTerm.vt100.background: S_base03
-
-XTerm*faceName: Inconsolata
-XTerm*faceSize: 11
-
-XTerm.BorderWidth: 10
-
 !URxvt.font:8x13
-URxvt.letterSpace: 1
+URxvt.letterSpace: 0
 
 *color0:                  S_base02
 *color1:                  S_red
