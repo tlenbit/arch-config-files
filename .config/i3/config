@@ -67,14 +67,15 @@ set $t b8
 #client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 
-gaps inner 6
-gaps outer -6
+gaps inner 10
+gaps outer -10
 #smart_gaps on
 bindsym $mod+i gaps inner current minus 10
 bindsym $mod+o gaps inner current plus 10
 bindsym $mod+Shift+i gaps inner current minus 150
 bindsym $mod+Shift+o gaps inner current plus 150
 
+exec --no-startup-id libinput-gestures-setup start
 exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id feh --bg-center ~/.config/i3/wallpapers_for_conky/479e8b9a0160668beb33ac08541a82d1.jpg
 exec --no-startup-id conky -c ~/.config/conky/conky.conf
@@ -102,17 +103,18 @@ for_window [class="my_cava_window2"] floating enable resize set 300 60
 for_window [class="my_cava_window2"] move down 699
 for_window [class="my_cava_window2"] move left 940
 
-for_window [class="vlc"] floating enable resize set 300 200
+# for_window [class="vlc"] floating enable resize set 300 200
 
 # exec --no-startup-id ~/.config/i3/run_with_wm_class_set --run my_cava_window my_cava_window urxvt -e cava
 bindsym $mod+c exec --no-startup-id ~/.config/i3/run_with_wm_class_set --run my_cava_window my_cava_window urxvt -b 0 --transparent -e cava
 
 
+bindsym $mod+a exec ~/.config/i3/screenlock.sh
 bindsym $mod+x workspace $ws4 exec --no-startup-id ~/.config/i3/open_ranger_if_not_already.sh
 bindsym $mod+Return exec --no-startup-id urxvt -lsp 3
 bindsym $mod+Shift+p exec i3lock -i ~/.config/i3/screen.png
 bindsym $mod+q kill
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show drun -show-icons
 bindsym $mod+Ctrl+Shift+q exec shutdown -P now
 bindsym $mod+n exec --no-startup-id "~/.config/i3/set_random_wallpaper.sh; killall polybar; polybar main"
 bindsym $mod+p exec --no-startup-id ~/.config/i3/hide_unhide_polybar.sh
@@ -120,6 +122,7 @@ bindsym $mod+p exec --no-startup-id ~/.config/i3/hide_unhide_polybar.sh
 #bindsym Mod1+Shift exec --no-startup-id setxkbmap us
 bindsym Shift+Tab exec --no-startup-id ~/.config/i3/change_layout.sh
 
+assign [class="jetbrains-pycharm"] $ws2
 assign [class="Chromium"] $ws3
 assign [class="torrent"] $ws8
 assign [class="Vlc"] $ws7
@@ -153,10 +156,10 @@ bindsym $mod+KP_Subtract exec --no-startup-id "amixer -c 1 sset 'Master' 22-"
 bindsym $mod+KP_Add exec --no-startup-id "amixer -c 1 sset 'Master' 22+"
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -198,7 +201,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -268,10 +271,13 @@ mode "resize" {
         bindsym Up resize shrink height 5 px or 5 ppt
         bindsym Right resize grow width 5 px or 5 ppt
 
-        # back to normal: Enter or Escape
+        # back tt normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
+workspace_auto_back_and_forth yes
+
 
 bindsym $mod+r mode "resize"
 
@@ -314,7 +320,6 @@ bindsym $mod+m focus floating; mode "move"
 #    #inactive_workspace $black2$t $black2$t $white1$t
 #    focused_workspace $black3$t $black3$t $white3
 #    active_workspace $black3$t $black3$t $white190
-#    inactive_workspace $black3$t $black3$t $white190
 #    urgent_workspace $black3$t $black3$t $white190
 #  }
 #

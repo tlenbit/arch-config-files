@@ -25,4 +25,5 @@ neofetch --ascii ~/.config/neofetch/ascii_logos/12
 
 # added by Anaconda3 4.4.0 installer
 #export PATH="/home/cristo/anaconda3/bin:$PATH"
+export PATH=$PATH:/opt/pycharm-2018.1.4/bin
 source /usr/share/nvm/init-nvm.sh
