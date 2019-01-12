@@ -21,9 +21,10 @@ HISTSIZE=1000
 
 # neofetch --config /home/cristo/.config/neofetch/config
 #--ascii_colors 6 6 1 8 8 6
-neofetch --ascii ~/.config/neofetch/ascii_logos/12
+neofetch --ascii ~/.config/neofetch/logo
 
 # added by Anaconda3 4.4.0 installer
 #export PATH="/home/cristo/anaconda3/bin:$PATH"
 export PATH=$PATH:/opt/pycharm-2018.1.4/bin
 source /usr/share/nvm/init-nvm.sh
+
