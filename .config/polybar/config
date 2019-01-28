@@ -44,11 +44,11 @@ alert = #ffffff
 enable-ipc = true
 monitor = eDP-1
 width = 100%
-height = 28
+height = 27
 ;offset-x = 0%
 ;offset-y = 0%
 bottom = true
-radius = 4
+radius = 0
 fixed-center = true
 
 background = ${colors.background}
@@ -59,7 +59,7 @@ line-color = #00ffffff
 
 border-left-size = 380
 border-right-size = 380
-border-bottom-size = 5
+border-bottom-size = 0
 border-top-size = 8
 border-color = #00000000
 

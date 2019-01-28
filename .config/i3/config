@@ -65,7 +65,7 @@ exec --no-startup-id xset r rate 250 30
 exec --no-startup-id setxkbmap us
 exec --no-startup-id udiskie -t -F
 exec --no-startup-id cmst -m
-exec --no-startup-id redshift -t 6500:4500
+exec --no-startup-id redshift -t 6500:4500 -l 55.5:38.1
 
 exec --no-startup-id docker run -p 1433:1433 quay.io/inframine/e-logs:db
 exec --no-startup-id docker run -p 6379:6379 redis

@@ -60,7 +60,7 @@ rofi.line-margin: 5
 !rofi.font: Inconsolata:size=11
 
 URxvt*borderless: true
-URxvt*internalBorder: 2
+URxvt*internalBorder: 4
 !URxvt*externalBorder: 1
 !URxvt*borderColor: #268bd2
 URxvt*scrollBar: false
