@@ -1,3 +1,63 @@
-2018/08/07-15:18:04.030 803 Reusing MANIFEST /home/cristo/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
-2018/08/07-15:18:04.031 803 Recovering log #86
-2018/08/07-15:18:04.032 803 Reusing old log /home/cristo/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/000086.log 
+2019/03/18-05:04:15.847 6315 Reusing MANIFEST /home/cristo/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2019/03/18-05:04:15.847 6315 Recovering log #613
+2019/03/18-05:04:15.851 6315 Reusing old log /home/cristo/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/000613.log 
+2019/03/18-12:43:45.187 20076 Level-0 table #617: started
+2019/03/18-12:43:45.202 20076 Level-0 table #617: 1169869 bytes OK
+2019/03/18-12:43:45.203 20076 Delete type=0 #613
+2019/03/18-12:43:45.204 20076 Compacting 4@0 + 1@1 files
+2019/03/18-12:43:45.227 20076 Generated table #618@0: 5 keys, 18648 bytes
+2019/03/18-12:43:45.227 20076 Compacted 4@0 + 1@1 files => 18648 bytes
+2019/03/18-12:43:45.228 20076 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/03/18-12:43:45.228 20076 Delete type=2 #614
+2019/03/18-12:43:45.228 20076 Delete type=2 #608
+2019/03/18-12:43:45.228 20076 Delete type=2 #612
+2019/03/18-12:43:45.228 20076 Delete type=2 #617
+2019/03/18-12:43:45.229 20076 Delete type=2 #610
+2019/03/18-12:52:33.679 20076 Level-0 table #620: started
+2019/03/18-12:52:33.695 20076 Level-0 table #620: 1188142 bytes OK
+2019/03/18-12:52:33.697 20076 Delete type=0 #616
+2019/03/18-13:25:17.065 20076 Level-0 table #622: started
+2019/03/18-13:25:17.080 20076 Level-0 table #622: 1263062 bytes OK
+2019/03/18-13:25:17.081 20076 Delete type=0 #619
+2019/03/18-13:43:47.353 20076 Level-0 table #624: started
+2019/03/18-13:43:47.367 20076 Level-0 table #624: 1278566 bytes OK
+2019/03/18-13:43:47.368 20076 Delete type=0 #621
+2019/03/18-14:02:00.425 20076 Level-0 table #626: started
+2019/03/18-14:02:00.440 20076 Level-0 table #626: 1291624 bytes OK
+2019/03/18-14:02:00.441 20076 Delete type=0 #623
+2019/03/18-14:02:00.442 20076 Compacting 4@0 + 1@1 files
+2019/03/18-14:02:00.462 20076 Generated table #627@0: 5 keys, 16344 bytes
+2019/03/18-14:02:00.462 20076 Compacted 4@0 + 1@1 files => 16344 bytes
+2019/03/18-14:02:00.462 20076 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/03/18-14:02:00.462 20076 Delete type=2 #620
+2019/03/18-14:02:00.463 20076 Delete type=2 #622
+2019/03/18-14:02:00.463 20076 Delete type=2 #624
+2019/03/18-14:02:00.463 20076 Delete type=2 #626
+2019/03/18-14:02:00.464 20076 Delete type=2 #618
+2019/03/18-14:53:36.864 20076 Level-0 table #629: started
+2019/03/18-14:53:36.881 20076 Level-0 table #629: 1291999 bytes OK
+2019/03/18-14:53:36.882 20076 Delete type=0 #625
+2019/03/18-15:12:33.286 20076 Level-0 table #631: started
+2019/03/18-15:12:33.299 20076 Level-0 table #631: 1284776 bytes OK
+2019/03/18-15:12:33.300 20076 Delete type=0 #628
+2019/03/18-16:08:51.657 20076 Level-0 table #633: started
+2019/03/18-16:08:51.671 20076 Level-0 table #633: 1279404 bytes OK
+2019/03/18-16:08:51.673 20076 Delete type=0 #630
+2019/03/18-17:51:34.259 20076 Level-0 table #635: started
+2019/03/18-17:51:34.272 20076 Level-0 table #635: 1291265 bytes OK
+2019/03/18-17:51:34.273 20076 Delete type=0 #632
+2019/03/18-17:51:34.274 20076 Compacting 4@0 + 1@1 files
+2019/03/18-17:51:34.293 20076 Generated table #636@0: 5 keys, 16710 bytes
+2019/03/18-17:51:34.293 20076 Compacted 4@0 + 1@1 files => 16710 bytes
+2019/03/18-17:51:34.293 20076 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/03/18-17:51:34.293 20076 Delete type=2 #631
+2019/03/18-17:51:34.294 20076 Delete type=2 #633
+2019/03/18-17:51:34.294 20076 Delete type=2 #635
+2019/03/18-17:51:34.294 20076 Delete type=2 #629
+2019/03/18-17:51:34.294 20076 Delete type=2 #627
+2019/03/18-19:24:19.034 20076 Level-0 table #638: started
+2019/03/18-19:24:19.050 20076 Level-0 table #638: 1282444 bytes OK
+2019/03/18-19:24:19.052 20076 Delete type=0 #634
+2019/03/19-12:08:44.363 20076 Level-0 table #640: started
+2019/03/19-12:08:44.383 20076 Level-0 table #640: 1291754 bytes OK
+2019/03/19-12:08:44.386 20076 Delete type=0 #637

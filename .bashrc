@@ -3,6 +3,7 @@ function cs() {
   }
 alias ll="ls -la --block-size=MB"
 alias ls='ls --color=auto'
+alias hg='history | grep '
 alias wget='wget --inet4-only'
 alias qutebrowser='qutebrowser --backend webengine'
 
